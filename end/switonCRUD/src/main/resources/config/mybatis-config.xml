@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+   "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+   <typeAliases>
+<package name="com.ssafy.switon.dto"/>
+   </typeAliases>
+   <mappers>
+      <mapper resource="mappers/articlelike.xml" /> 
+      <mapper resource="mappers/studylike.xml" /> 
+      <mapper resource="mappers/commentlike.xml" /> 
+      <mapper resource="mappers/articlefav.xml" /> 
+      <mapper resource="mappers/join.xml" />
+      <mapper resource="mappers/category.xml" />
+      <mapper resource="mappers/comment.xml" />
+      <mapper resource="mappers/User.xml" /> 
+      <mapper resource="mappers/Schedule.xml" />
+	  <mapper resource="mappers/Userschedule.xml" />
+	  <mapper resource="mappers/Study.xml" />
+	  <mapper resource="mappers/Alarm.xml" />
+	  <mapper resource="mappers/Conference.xml" />
+   </mappers>
+</configuration>
