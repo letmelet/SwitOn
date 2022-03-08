@@ -1,57 +1,57 @@
-ÇöÀç ±¸ÇöµÈ °Í ¸ñ·Ï
+í˜„ì¬ êµ¬í˜„ëœ ê²ƒ ëª©ë¡
 
 
-** À¯Àú°ü·Ã(UserRestController) **
+** ìœ ì €ê´€ë ¨(UserRestController) **
 
 POST	/accounts/login
 POST	/accounts/register
 
 
-** ÇÁ·ÎÇÊ °ü·Ã **
-GET	/accounts/{id}		À¯Àú Á¤º¸
-GET	/accounts/{id}/mystudy	À¯Àú°¡ °¡ÀÔÇÑ ½ºÅÍµğ ¸ñ·Ï
-GET	/accounts/{id}/myqna	À¯Àú°¡ ÀÛ¼ºÇÑ QnA ±Û ¸ñ·Ï	(·Î±×ÀÎ ÇÊ¿ä)
-GET	/accounts/{id}/myrepository	À¯Àú°¡ ÀÛ¼ºÇÑ ÀÚ·á½Ç±Û ¸ñ·Ï (·Î±×ÀÎ ÇÊ¿ä)
+** í”„ë¡œí•„ ê´€ë ¨ **
+GET	/accounts/{id}		ìœ ì € ì •ë³´
+GET	/accounts/{id}/mystudy	ìœ ì €ê°€ ê°€ì…í•œ ìŠ¤í„°ë”” ëª©ë¡
+GET	/accounts/{id}/myqna	ìœ ì €ê°€ ì‘ì„±í•œ QnA ê¸€ ëª©ë¡	(ë¡œê·¸ì¸ í•„ìš”)
+GET	/accounts/{id}/myrepository	ìœ ì €ê°€ ì‘ì„±í•œ ìë£Œì‹¤ê¸€ ëª©ë¡ (ë¡œê·¸ì¸ í•„ìš”)
 
 
 
-** ½ºÅÍµğ (StudyRestController) **
+** ìŠ¤í„°ë”” (StudyRestController) **
 
-GET	/study/			½ºÅÍµğ ¸®½ºÆ®
-POST	/study/			½ºÅÍµğ »ı¼º		(·Î±×ÀÎ ÇÊ¿ä)
-GET	/study/{studyId} 		½ºÅÍµğ »ó¼¼Á¤º¸ ¹İÈ¯
-PUT	/study/{studyId}		½ºÅÍµğ ¼öÁ¤		(¸ğÀÓÀå ·Î±×ÀÎ ÇÊ¿ä)
-DELETE	/study/{studyId}		½ºÅÍµğ »èÁ¦		(¸ğÀÓÀå ·Î±×ÀÎ ÇÊ¿ä)
-GET	/study/{studyId}/notice	°øÁö, qna, ÀÚ·á½Ç °Ô½Ã±Ûµé ¹İÈ¯
+GET	/study/			ìŠ¤í„°ë”” ë¦¬ìŠ¤íŠ¸
+POST	/study/			ìŠ¤í„°ë”” ìƒì„±		(ë¡œê·¸ì¸ í•„ìš”)
+GET	/study/{studyId} 		ìŠ¤í„°ë”” ìƒì„¸ì •ë³´ ë°˜í™˜
+PUT	/study/{studyId}		ìŠ¤í„°ë”” ìˆ˜ì •		(ëª¨ì„ì¥ ë¡œê·¸ì¸ í•„ìš”)
+DELETE	/study/{studyId}		ìŠ¤í„°ë”” ì‚­ì œ		(ëª¨ì„ì¥ ë¡œê·¸ì¸ í•„ìš”)
+GET	/study/{studyId}/notice	ê³µì§€, qna, ìë£Œì‹¤ ê²Œì‹œê¸€ë“¤ ë°˜í™˜
 	/study/{studyId}/qna
 	/study/{studyId}/repository
-POST	/study/{studyId}/qna		QnA±Û ÀÛ¼º	(·Î±×ÀÎ ÇÊ¿ä)
-POST	/study/{studyId}/repository		ÀÚ·á½Ç±Û ÀÛ¼º	(·Î±×ÀÎ ÇÊ¿ä)
-GET	/study/{studyId}/qna/{articleId}	QnA±Û Á¶È¸
-GET	/study/{studyId}/repository/{articleId}	ÀÚ·á½Ç±Û Á¶È¸
-PUT	/study/{studyId}/qna/{articleId}	QnA±Û ¼öÁ¤	(·Î±×ÀÎ ÇÊ¿ä)
-PUT	/study/{studyId}/repository/{articleId}	ÀÚ·á½Ç±Û ¼öÁ¤	(·Î±×ÀÎ ÇÊ¿ä)
-DELETE	/study/{studyId}/qna/{articleId}	QnA±Û »èÁ¦	(·Î±×ÀÎ ÇÊ¿ä)
-DELETE	/study/{studyId}/repository/{articleId}	ÀÚ·á½Ç±Û »èÁ¦	(·Î±×ÀÎ ÇÊ¿ä)
+POST	/study/{studyId}/qna		QnAê¸€ ì‘ì„±	(ë¡œê·¸ì¸ í•„ìš”)
+POST	/study/{studyId}/repository		ìë£Œì‹¤ê¸€ ì‘ì„±	(ë¡œê·¸ì¸ í•„ìš”)
+GET	/study/{studyId}/qna/{articleId}	QnAê¸€ ì¡°íšŒ
+GET	/study/{studyId}/repository/{articleId}	ìë£Œì‹¤ê¸€ ì¡°íšŒ
+PUT	/study/{studyId}/qna/{articleId}	QnAê¸€ ìˆ˜ì •	(ë¡œê·¸ì¸ í•„ìš”)
+PUT	/study/{studyId}/repository/{articleId}	ìë£Œì‹¤ê¸€ ìˆ˜ì •	(ë¡œê·¸ì¸ í•„ìš”)
+DELETE	/study/{studyId}/qna/{articleId}	QnAê¸€ ì‚­ì œ	(ë¡œê·¸ì¸ í•„ìš”)
+DELETE	/study/{studyId}/repository/{articleId}	ìë£Œì‹¤ê¸€ ì‚­ì œ	(ë¡œê·¸ì¸ í•„ìš”)
 
-GET	/study/{studyId}/qna/{articleId}/comments	 QnA ±ÛÀÇ ´ñ±Ûµé Á¶È¸
-GET	/study/{studyId}/repository/{articleId}/comments ÀÚ·á½Ç ±ÛÀÇ ´ñ±Ûµé Á¶È¸
-POST	/study/{studyId}/qna/{articleId}/comments	 QnA±Û¿¡ ´ñ±Û ÀÛ¼º	(·Î±×ÀÎ ÇÊ¿ä)
-POST	/study/{studyId}/repository/{articleId}/comments ÀÚ·á½Ç ±Û¿¡ ´ñ±Û ÀÛ¼º	(·Î±×ÀÎ ÇÊ¿ä)
-PUT	/study/{studyId}/qna/{articleId}/{commentId}	 	´ñ±Û ¼öÁ¤		(·Î±×ÀÎ ÇÊ¿ä)
-PUT	/study/{studyId}/repository/{articleId}/{commentId}	´ñ±Û ¼öÁ¤		(·Î±×ÀÎ ÇÊ¿ä)
-DELETE	/study/{studyId}/qna/{articleId}/{commentId}		´ñ±Û »èÁ¦		(·Î±×ÀÎ ÇÊ¿ä)
-DELETE	/study/{studyId}/repository/{articleId}/{commentId}	´ñ±Û »èÁ¦		(·Î±×ÀÎ ÇÊ¿ä)
+GET	/study/{studyId}/qna/{articleId}/comments	 QnA ê¸€ì˜ ëŒ“ê¸€ë“¤ ì¡°íšŒ
+GET	/study/{studyId}/repository/{articleId}/comments ìë£Œì‹¤ ê¸€ì˜ ëŒ“ê¸€ë“¤ ì¡°íšŒ
+POST	/study/{studyId}/qna/{articleId}/comments	 QnAê¸€ì— ëŒ“ê¸€ ì‘ì„±	(ë¡œê·¸ì¸ í•„ìš”)
+POST	/study/{studyId}/repository/{articleId}/comments ìë£Œì‹¤ ê¸€ì— ëŒ“ê¸€ ì‘ì„±	(ë¡œê·¸ì¸ í•„ìš”)
+PUT	/study/{studyId}/qna/{articleId}/{commentId}	 	ëŒ“ê¸€ ìˆ˜ì •		(ë¡œê·¸ì¸ í•„ìš”)
+PUT	/study/{studyId}/repository/{articleId}/{commentId}	ëŒ“ê¸€ ìˆ˜ì •		(ë¡œê·¸ì¸ í•„ìš”)
+DELETE	/study/{studyId}/qna/{articleId}/{commentId}		ëŒ“ê¸€ ì‚­ì œ		(ë¡œê·¸ì¸ í•„ìš”)
+DELETE	/study/{studyId}/repository/{articleId}/{commentId}	ëŒ“ê¸€ ì‚­ì œ		(ë¡œê·¸ì¸ í•„ìš”)
 
-GET	/study/{studyId}/notice		°øÁö±Û Á¶È¸
-POST	/study/{studyId}/notice		°øÁö±Û ÀÛ¼º	(¸ğÀÓÀå ·Î±×ÀÎ ÇÊ¿ä)
-PUT	/study/{studyId}/notice/{noticeId}	°øÁö±Û ¼öÁ¤	(¸ğÀÓÀå ·Î±×ÀÎ ÇÊ¿ä)
-DELETE	/study/{studyId}/notice/{noticeId}	°øÁö±Û »èÁ¦	(¸ğÀÓÀå ·Î±×ÀÎ ÇÊ¿ä)
-
-
+GET	/study/{studyId}/notice		ê³µì§€ê¸€ ì¡°íšŒ
+POST	/study/{studyId}/notice		ê³µì§€ê¸€ ì‘ì„±	(ëª¨ì„ì¥ ë¡œê·¸ì¸ í•„ìš”)
+PUT	/study/{studyId}/notice/{noticeId}	ê³µì§€ê¸€ ìˆ˜ì •	(ëª¨ì„ì¥ ë¡œê·¸ì¸ í•„ìš”)
+DELETE	/study/{studyId}/notice/{noticeId}	ê³µì§€ê¸€ ì‚­ì œ	(ëª¨ì„ì¥ ë¡œê·¸ì¸ í•„ìš”)
 
 
-** ÁÁ¾Æ¿ä, ÁÁ¾Æ¿ä Ãë¼Ò ** (¸ğµÎ ·Î±×ÀÎ ÇÊ¿ä)
+
+
+** ì¢‹ì•„ìš”, ì¢‹ì•„ìš” ì·¨ì†Œ ** (ëª¨ë‘ ë¡œê·¸ì¸ í•„ìš”)
 
 POST	/study/{studyId}/like			
 DELETE	/study/{studyId}/like			
@@ -67,16 +67,18 @@ POST	/study/{studyId}/fav
 DELETE	/study/{studyId}/fav
 
 
-** ½ºÄÉÁÙ **	(´Ù ·Î±×ÀÎ ÇÊ¿ä)
-GET	/accounts/{name}/myschedule		À¯Àú°¡ Âü¿©ÇÑ ½ºÄÉÁÙµé¸¸ ¸ğ¾Æ¼­ ¹İÈ¯ (profileRestController¿¡ ÀÖÀ½)
-GET	/study/{studyId}/schedule		ÇØ´ç ½ºÅÍµğÀÇ ½ºÄÉÁÙµé ¹İÈ¯
-POST	/study/{studyId}/schedule		½ºÅÍµğÀÇ ½ºÄÉÁÙ »õ·Î »ı¼º (¸ğÀÓÀå¸¸ °¡´É)
-GET	/study/{studyId}/schedule/{scheduleId}	½ºÄÉÁÙ Á¶È¸
-PUT	/study/{studyId}/schedule/{scheduleId}	½ºÄÉÁÙ ¼öÁ¤ (¸ğÀÓÀå¸¸ °¡´É)
-DELETE	/study/{studyId}/schedule/{scheduleId}	½ºÄÉÁÙ »èÁ¦ (¸ğÀÓÀå¸¸ °¡´É)
-GET	/study/{studyId}/schedule/{scheduleId}/participate	À¯ÀúÀÇ ½ºÄÉÁÙ Âü¿© Á¤º¸ ¹İÈ¯ (ÀÔ½Ç, Åğ½Ç, ½Ã°£Áö³², Ãâ¼®¼º°ø ¿©ºÎ)
-POST	/study/{studyId}/schedule/{scheduleId}/participate	À¯ÀúÀÇ ½ºÄÉÁÙ Âü¿©	(À¯Àú°¡ Âü°¡ÇÏ°Ú´Ù°í ½ÅÃ»)
-DELETE	/study/{studyId}/schedule/{scheduleId}/participate	À¯ÀúÀÇ ½ºÄÉÁÙ Âü¿© Ãë¼Ò
-PUT	/study/{studyId}/schedule/{scheduleId}/checkin		À¯ÀúÀÇ Ãâ¼®Ã¼Å©(ÀÔ½Ç)
-PUT	/study/{studyId}/schedule/{scheduleId}/checkout	À¯ÀúÀÇ Ãâ¼®Ã¼Å©(Åğ½Ç)
+** ìŠ¤ì¼€ì¤„ **	(ë‹¤ ë¡œê·¸ì¸ í•„ìš”)
+GET	/accounts/{name}/myschedule		ìœ ì €ê°€ ì°¸ì—¬í•œ ìŠ¤ì¼€ì¤„ë“¤ë§Œ ëª¨ì•„ì„œ ë°˜í™˜ (profileRestControllerì— ìˆìŒ)
+GET	/study/{studyId}/schedule		í•´ë‹¹ ìŠ¤í„°ë””ì˜ ìŠ¤ì¼€ì¤„ë“¤ ë°˜í™˜
+POST	/study/{studyId}/schedule		ìŠ¤í„°ë””ì˜ ìŠ¤ì¼€ì¤„ ìƒˆë¡œ ìƒì„± (ëª¨ì„ì¥ë§Œ ê°€ëŠ¥)
+GET	/study/{studyId}/schedule/{scheduleId}	ìŠ¤ì¼€ì¤„ ì¡°íšŒ
+PUT	/study/{studyId}/schedule/{scheduleId}	ìŠ¤ì¼€ì¤„ ìˆ˜ì • (ëª¨ì„ì¥ë§Œ ê°€ëŠ¥)
+DELETE	/study/{studyId}/schedule/{scheduleId}	ìŠ¤ì¼€ì¤„ ì‚­ì œ (ëª¨ì„ì¥ë§Œ ê°€ëŠ¥)
+GET	/study/{studyId}/schedule/{scheduleId}/participate	ìœ ì €ì˜ ìŠ¤ì¼€ì¤„ ì°¸ì—¬ ì •ë³´ ë°˜í™˜ (ì…ì‹¤, í‡´ì‹¤, ì‹œê°„ì§€ë‚¨, ì¶œì„ì„±ê³µ ì—¬ë¶€)
+POST	/study/{studyId}/schedule/{scheduleId}/participate	ìœ ì €ì˜ ìŠ¤ì¼€ì¤„ ì°¸ì—¬	(ìœ ì €ê°€ ì°¸ê°€í•˜ê² ë‹¤ê³  ì‹ ì²­)
+DELETE	/study/{studyId}/schedule/{scheduleId}/participate	ìœ ì €ì˜ ìŠ¤ì¼€ì¤„ ì°¸ì—¬ ì·¨ì†Œ
+PUT	/study/{studyId}/schedule/{scheduleId}/checkin		ìœ ì €ì˜ ì¶œì„ì²´í¬(ì…ì‹¤)
+PUT	/study/{studyId}/schedule/{scheduleId}/checkout	ìœ ì €ì˜ ì¶œì„ì²´í¬(í‡´ì‹¤)
+
+
 
