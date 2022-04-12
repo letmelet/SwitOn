@@ -67,7 +67,7 @@ POST	/study/{studyId}/fav
 DELETE	/study/{studyId}/fav
 
 
-** 스케줄 **	(다 로그인 필요)
+** 스케줄 **	(모두 로그인 필요)
 GET	/accounts/{name}/myschedule		유저가 참여한 스케줄들만 모아서 반환 (profileRestController에 있음)
 GET	/study/{studyId}/schedule		해당 스터디의 스케줄들 반환
 POST	/study/{studyId}/schedule		스터디의 스케줄 새로 생성 (모임장만 가능)
