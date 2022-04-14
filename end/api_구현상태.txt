@@ -51,7 +51,7 @@ DELETE	/study/{studyId}/notice/{noticeId}	공지글 삭제	(모임장 로그인 
 
 
 
-** 좋아요, 좋아요 취소 ** (모두 로그인 필요)
+** 좋아요, 좋아요 취소 ** (모두 로그인 필요) 
 
 POST	/study/{studyId}/like			
 DELETE	/study/{studyId}/like			
