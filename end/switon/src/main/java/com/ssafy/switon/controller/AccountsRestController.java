@@ -56,6 +56,7 @@ public class AccountsRestController {
 				return new ResponseEntity<>(new ReturnMsg("비밀번호가 일치하지 않습니다. 다시 한번 확인해주세요."), HttpStatus.I_AM_A_TEAPOT);
 			}
 		} catch (Exception e) {
+			e.printStackTrace();
 		}
 		return new ResponseEntity<>(new ReturnMsg("입력하신 정보를 다시 한번  확인해주세요."), HttpStatus.BAD_REQUEST);
 	}
