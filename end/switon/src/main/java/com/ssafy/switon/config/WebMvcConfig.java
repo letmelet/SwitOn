@@ -10,7 +10,7 @@ import com.ssafy.switon.Interceptors.CORSInterceptor;
 import com.ssafy.switon.Interceptors.GetRequestInterceptor;
 import com.ssafy.switon.Interceptors.OtherRequestInterceptor;
 
-@Configuration
+@Configuration 
 public class WebMvcConfig implements WebMvcConfigurer{
 
 	@Autowired
