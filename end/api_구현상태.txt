@@ -45,7 +45,7 @@ DELETE	/study/{studyId}/repository/{articleId}/{commentId}	댓글 삭제		(로�
 
 GET	/study/{studyId}/notice		공지글 조회
 POST	/study/{studyId}/notice		공지글 작성	(모임장 로그인 필요)
-PUT	/study/{studyId}/notice/{noticeId}	공지글 수정	(모임장 로그인 필요)
+PUT	/study/{studyId}/notice/{noticeId}	공지글 수정	(모임장 로그인 필요) 
 DELETE	/study/{studyId}/notice/{noticeId}	공지글 삭제	(모임장 로그인 필요)
 
 
